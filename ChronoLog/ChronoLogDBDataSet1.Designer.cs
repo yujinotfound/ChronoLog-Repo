@@ -20,9 +20,9 @@ namespace ChronoLog {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ChronoLogDBDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ChronoLogDBDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ChronoLogDBDataSet : global::System.Data.DataSet {
+    public partial class ChronoLogDBDataSet1 : global::System.Data.DataSet {
         
         private ChronoLogDBDataTable tableChronoLogDB;
         
@@ -30,7 +30,7 @@ namespace ChronoLog {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public ChronoLogDBDataSet() {
+        public ChronoLogDBDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ChronoLog {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected ChronoLogDBDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ChronoLogDBDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace ChronoLog {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ChronoLogDBDataSet cln = ((ChronoLogDBDataSet)(base.Clone()));
+            ChronoLogDBDataSet1 cln = ((ChronoLogDBDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace ChronoLog {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ChronoLogDBDataSet";
+            this.DataSetName = "ChronoLogDBDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ChronoLogDBDataSet.xsd";
+            this.Namespace = "http://tempuri.org/ChronoLogDBDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableChronoLogDB = new ChronoLogDBDataTable();
@@ -225,7 +225,7 @@ namespace ChronoLog {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ChronoLogDBDataSet ds = new ChronoLogDBDataSet();
+            ChronoLogDBDataSet1 ds = new ChronoLogDBDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -542,7 +542,7 @@ namespace ChronoLog {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ChronoLogDBDataSet ds = new ChronoLogDBDataSet();
+                ChronoLogDBDataSet1 ds = new ChronoLogDBDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -717,7 +717,7 @@ namespace ChronoLog {
         }
     }
 }
-namespace ChronoLog.ChronoLogDBDataSetTableAdapters {
+namespace ChronoLog.ChronoLogDBDataSet1TableAdapters {
     
     
     /// <summary>
@@ -883,7 +883,7 @@ namespace ChronoLog.ChronoLogDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ChronoLogDBDataSet.ChronoLogDBDataTable dataTable) {
+        public virtual int Fill(ChronoLogDBDataSet1.ChronoLogDBDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -896,9 +896,9 @@ namespace ChronoLog.ChronoLogDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ChronoLogDBDataSet.ChronoLogDBDataTable GetData() {
+        public virtual ChronoLogDBDataSet1.ChronoLogDBDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ChronoLogDBDataSet.ChronoLogDBDataTable dataTable = new ChronoLogDBDataSet.ChronoLogDBDataTable();
+            ChronoLogDBDataSet1.ChronoLogDBDataTable dataTable = new ChronoLogDBDataSet1.ChronoLogDBDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -906,14 +906,14 @@ namespace ChronoLog.ChronoLogDBDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ChronoLogDBDataSet.ChronoLogDBDataTable dataTable) {
+        public virtual int Update(ChronoLogDBDataSet1.ChronoLogDBDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ChronoLogDBDataSet dataSet) {
+        public virtual int Update(ChronoLogDBDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "ChronoLogDB");
         }
         
@@ -1081,7 +1081,7 @@ namespace ChronoLog.ChronoLogDBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(ChronoLogDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ChronoLogDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._chronoLogDBTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.ChronoLogDB.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1100,7 +1100,7 @@ namespace ChronoLog.ChronoLogDBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(ChronoLogDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ChronoLogDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._chronoLogDBTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.ChronoLogDB.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1118,7 +1118,7 @@ namespace ChronoLog.ChronoLogDBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(ChronoLogDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ChronoLogDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._chronoLogDBTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.ChronoLogDB.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1160,7 +1160,7 @@ namespace ChronoLog.ChronoLogDBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(ChronoLogDBDataSet dataSet) {
+        public virtual int UpdateAll(ChronoLogDBDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

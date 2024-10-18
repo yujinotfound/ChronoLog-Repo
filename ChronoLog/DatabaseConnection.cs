@@ -13,7 +13,7 @@ namespace ChronoLog {
 
         public SqlConnection GetConnection() {
 
-            connection = new SqlConnection("Data Source=YanJi13;Initial Catalog=ChronoLogDB;Integrated Security=True;Encrypt=False");
+            connection = new SqlConnection("Data Source=MSI\\MSSQLSERVER2022;Initial Catalog=ChronoLogDB;Integrated Security=True;Encrypt=False");
             return connection;
         }
     }

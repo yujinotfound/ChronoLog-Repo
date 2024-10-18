@@ -33,5 +33,16 @@ namespace ChronoLog.Properties {
                 return ((string)(this["ChronoLogDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MSI\\MSSQLSERVER2022;Initial Catalog=ChronoLogDB;Integrated Security=T" +
+            "rue;Encrypt=False")]
+        public string ChronoLogDBConnectionString1 {
+            get {
+                return ((string)(this["ChronoLogDBConnectionString1"]));
+            }
+        }
     }
 }

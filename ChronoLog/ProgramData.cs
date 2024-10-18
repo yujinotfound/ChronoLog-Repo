@@ -20,7 +20,6 @@ namespace ChronoLog {
         // timer data
         private DateTime usageTimeStart;
         private DateTime usageTimeEnd;
-        private int usageDuration;
 
         // setters and getters 
         public DateTime UsageTimeStart {
@@ -40,17 +39,7 @@ namespace ChronoLog {
             set {
                 usageTimeEnd = value;
             }
-        }
-        public int UsageDuration {
-
-            get { 
-                
-                return usageDuration;
-            }
-            set {
-
-                usageDuration = value;
-            }
+        
         }
         public string Month {
 

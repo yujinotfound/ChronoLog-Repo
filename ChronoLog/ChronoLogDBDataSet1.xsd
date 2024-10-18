@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="ChronoLogDBDataSet" targetNamespace="http://tempuri.org/ChronoLogDBDataSet.xsd" xmlns:mstns="http://tempuri.org/ChronoLogDBDataSet.xsd" xmlns="http://tempuri.org/ChronoLogDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="ChronoLogDBDataSet1" targetNamespace="http://tempuri.org/ChronoLogDBDataSet1.xsd" xmlns:mstns="http://tempuri.org/ChronoLogDBDataSet1.xsd" xmlns="http://tempuri.org/ChronoLogDBDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -46,7 +46,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="ChronoLogDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ChronoLogDBDataSet" msprop:Generator_DataSetName="ChronoLogDBDataSet">
+  <xs:element name="ChronoLogDBDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ChronoLogDBDataSet1" msprop:Generator_DataSetName="ChronoLogDBDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="ChronoLogDB" msprop:Generator_RowEvHandlerName="ChronoLogDBRowChangeEventHandler" msprop:Generator_RowDeletedName="ChronoLogDBRowDeleted" msprop:Generator_RowDeletingName="ChronoLogDBRowDeleting" msprop:Generator_RowEvArgName="ChronoLogDBRowChangeEvent" msprop:Generator_TablePropName="ChronoLogDB" msprop:Generator_RowChangedName="ChronoLogDBRowChanged" msprop:Generator_RowChangingName="ChronoLogDBRowChanging" msprop:Generator_TableClassName="ChronoLogDBDataTable" msprop:Generator_RowClassName="ChronoLogDBRow" msprop:Generator_TableVarName="tableChronoLogDB" msprop:Generator_UserTableName="ChronoLogDB">
