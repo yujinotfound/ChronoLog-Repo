@@ -285,12 +285,6 @@ namespace ChronoLog {
             
             private global::System.Data.DataColumn columnTime_End;
             
-            private global::System.Data.DataColumn columnDay;
-            
-            private global::System.Data.DataColumn columnMonth;
-            
-            private global::System.Data.DataColumn columnYear;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ChronoLogDBDataTable() {
@@ -350,30 +344,6 @@ namespace ChronoLog {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DayColumn {
-                get {
-                    return this.columnDay;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MonthColumn {
-                get {
-                    return this.columnMonth;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn YearColumn {
-                get {
-                    return this.columnYear;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -409,15 +379,12 @@ namespace ChronoLog {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ChronoLogDBRow AddChronoLogDBRow(string User_Name, string Time_Start, string Time_End, string Day, string Month, string Year) {
+            public ChronoLogDBRow AddChronoLogDBRow(string User_Name, string Time_Start, string Time_End) {
                 ChronoLogDBRow rowChronoLogDBRow = ((ChronoLogDBRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         User_Name,
                         Time_Start,
-                        Time_End,
-                        Day,
-                        Month,
-                        Year};
+                        Time_End};
                 rowChronoLogDBRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowChronoLogDBRow);
                 return rowChronoLogDBRow;
@@ -443,9 +410,6 @@ namespace ChronoLog {
                 this.columnUser_Name = base.Columns["User Name"];
                 this.columnTime_Start = base.Columns["Time Start"];
                 this.columnTime_End = base.Columns["Time End"];
-                this.columnDay = base.Columns["Day"];
-                this.columnMonth = base.Columns["Month"];
-                this.columnYear = base.Columns["Year"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -457,24 +421,12 @@ namespace ChronoLog {
                 base.Columns.Add(this.columnTime_Start);
                 this.columnTime_End = new global::System.Data.DataColumn("Time End", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTime_End);
-                this.columnDay = new global::System.Data.DataColumn("Day", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDay);
-                this.columnMonth = new global::System.Data.DataColumn("Month", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMonth);
-                this.columnYear = new global::System.Data.DataColumn("Year", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnYear);
                 this.columnUser_Name.AllowDBNull = false;
                 this.columnUser_Name.MaxLength = 50;
                 this.columnTime_Start.AllowDBNull = false;
                 this.columnTime_Start.MaxLength = 50;
                 this.columnTime_End.AllowDBNull = false;
                 this.columnTime_End.MaxLength = 50;
-                this.columnDay.AllowDBNull = false;
-                this.columnDay.MaxLength = 50;
-                this.columnMonth.AllowDBNull = false;
-                this.columnMonth.MaxLength = 50;
-                this.columnYear.AllowDBNull = false;
-                this.columnYear.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -647,39 +599,6 @@ namespace ChronoLog {
                     this[this.tableChronoLogDB.Time_EndColumn] = value;
                 }
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Day {
-                get {
-                    return ((string)(this[this.tableChronoLogDB.DayColumn]));
-                }
-                set {
-                    this[this.tableChronoLogDB.DayColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Month {
-                get {
-                    return ((string)(this[this.tableChronoLogDB.MonthColumn]));
-                }
-                set {
-                    this[this.tableChronoLogDB.MonthColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Year {
-                get {
-                    return ((string)(this[this.tableChronoLogDB.YearColumn]));
-                }
-                set {
-                    this[this.tableChronoLogDB.YearColumn] = value;
-                }
-            }
         }
         
         /// <summary>
@@ -844,21 +763,15 @@ namespace ChronoLog.ChronoLogDBDataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("User Name", "User Name");
             tableMapping.ColumnMappings.Add("Time Start", "Time Start");
             tableMapping.ColumnMappings.Add("Time End", "Time End");
-            tableMapping.ColumnMappings.Add("Day", "Day");
-            tableMapping.ColumnMappings.Add("Month", "Month");
-            tableMapping.ColumnMappings.Add("Year", "Year");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ChronoLogDB] ([User Name], [Time Start], [Time End], [Day], [M" +
-                "onth], [Year]) VALUES (@User_Name, @Time_Start, @Time_End, @Day, @Month, @Year)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ChronoLogDB] ([User Name], [Time Start], [Time End]) VALUES (@" +
+                "User_Name, @Time_Start, @Time_End)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Time_Start", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time Start", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Time_End", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time End", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Day", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Day", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Month", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Month", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Year", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Year", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -874,8 +787,7 @@ namespace ChronoLog.ChronoLogDBDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [User Name], [Time Start], [Time End], Day, Month, Year FROM dbo.ChronoLog" +
-                "DB";
+            this._commandCollection[0].CommandText = "SELECT [User Name], [Time Start], [Time End] FROM dbo.ChronoLogDB";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -936,7 +848,7 @@ namespace ChronoLog.ChronoLogDBDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string User_Name, string Time_Start, string Time_End, string Day, string Month, string Year) {
+        public virtual int Insert(string User_Name, string Time_Start, string Time_End) {
             if ((User_Name == null)) {
                 throw new global::System.ArgumentNullException("User_Name");
             }
@@ -954,24 +866,6 @@ namespace ChronoLog.ChronoLogDBDataSet1TableAdapters {
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Time_End));
-            }
-            if ((Day == null)) {
-                throw new global::System.ArgumentNullException("Day");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Day));
-            }
-            if ((Month == null)) {
-                throw new global::System.ArgumentNullException("Month");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Month));
-            }
-            if ((Year == null)) {
-                throw new global::System.ArgumentNullException("Year");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Year));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

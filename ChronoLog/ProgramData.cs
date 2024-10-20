@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChronoLog {
-    internal class ProgramData {
-        
+namespace ChronoLog
+{
+    internal class ProgramData
+    {
+
         // for testing purposes
         private string testingEmail;
         private string testingPassword;
-        
+
         // date data
 
         private string month;
@@ -22,56 +25,77 @@ namespace ChronoLog {
         private DateTime usageTimeEnd;
 
         // setters and getters 
-        public DateTime UsageTimeStart {
-            
-            get { 
-                return usageTimeStart; 
+        public DateTime UsageTimeStart
+        {
+
+            get
+            {
+                return usageTimeStart;
             }
-            set { 
-                usageTimeStart = value; 
+            set
+            {
+                usageTimeStart = value;
             }
         }
-        public DateTime UsageTimeEnd {
+        public DateTime UsageTimeEnd
+        {
 
-            get {
+            get
+            {
                 return usageTimeEnd;
             }
-            set {
+            set
+            {
                 usageTimeEnd = value;
             }
-        
-        }
-        public string Month {
 
-            get {
+        }
+        public string Month
+        {
+
+            get
+            {
                 return month;
             }
-            set {
-                
+            set
+            {
+
                 month = value;
             }
         }
-        public int Year {
+        public int Year
+        {
 
-            get {   
+            get
+            {
                 return year;
             }
-            set {
+            set
+            {
 
                 year = value;
             }
         }
-        public int Day {
+        public int Day
+        {
 
-            get { 
-            
+            get
+            {
+
                 return day;
             }
-            set {
+            set
+            {
 
                 day = value;
             }
         }
+
     }
-}
+
+        }
+ 
+        
+
+ 
  
